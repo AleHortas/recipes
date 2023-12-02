@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100%;
+}
+
+/*<grid>*/
+.grid-container > *{
+    padding: 4px;
+
+}
+
+nav {
+    grid-area: nav;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.menu{
+    grid-area: menu;
+    background-color: rgba(211, 211, 208, 0.5);
+}
+
+footer{
+    grid-area: footer;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template: 
+    "nav nav nav" 4rem
+    "columnleft menu columnright"   auto
+    "footer footer footer"   12rem /
+    9rem auto 9rem
+}
+/*<grid>*/
+
+
+#title {
+    font-size: 3rem;
+    padding: 3rem 0 3rem 3rem;
+    font-weight: lighter;
+}
+
+li {
+    list-style: none;
+}
+
+.list img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.list {
+    display: flex;
+}
+
+.card {
+    padding: 0 0 3rem 3rem;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight:lighter;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav a {
+    color: rgb(105, 105, 105);
+
+}
