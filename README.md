@@ -1,3 +1,3 @@
-# recipes
+# Web course
 
-Repo to recipes web page
+This repo is for web lessons
